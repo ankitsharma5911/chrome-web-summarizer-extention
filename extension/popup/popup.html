@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Content Analyzer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Web Content Analyzer</h1>
+    
+    <div class="url-section">
+      <div id="current-url"></div>
+      <button id="analyze-btn">Analyze This Page</button>
+    </div>
+    
+    <div class="loading" id="loading-indicator">
+      <div class="spinner"></div>
+      <p>Analyzing content...</p>
+    </div>
+    
+    <div class="result-section" id="result-container">
+      <h2>Analysis Result</h2>
+      <div id="analysis-result"></div>
+    </div>
+    
+    <div class="interaction-section">
+      <h2>Ask About This Content</h2>
+      <textarea id="question-input" placeholder="Ask a question about this content..."></textarea>
+      <button id="ask-btn">Ask</button>
+      <div id="response-container"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
