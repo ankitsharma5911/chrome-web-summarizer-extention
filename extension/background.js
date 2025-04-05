@@ -9,7 +9,7 @@ chrome.runtime.onInstalled.addListener(() => {
   // between different parts of your extension
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === 'checkBackendStatus') {
-      fetch('http://localhost:5000/status')
+      fetch('https://chrome-web-summarizer-extention.onrender.com//status')
         .then(response => {
           if (response.ok) {
             return response.json();

@@ -55,7 +55,7 @@ Download the `extension/` folder and load it as an unpacked extension in Chrome 
 
 ```bash
 # To use chrome extention download the extension file
-https://github.com/ankitsharma5911/chrome-web-summarizer-extention
+git clone https://github.com/ankitsharma5911/chrome-web-summarizer-extention.git
 
 ```
 

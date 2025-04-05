@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Send URL to Python backend for analysis
   async function analyzeUrl(url) {
-    const response = await fetch('http://localhost:5000/analyze', {
+    const response = await fetch('https://chrome-web-summarizer-extention.onrender.com/analyze', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Send question to Python backend
   async function askQuestion(url, question) {
-    const response = await fetch('http://localhost:5000/ask', {
+    const response = await fetch('https://chrome-web-summarizer-extention.onrender.com/ask', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
