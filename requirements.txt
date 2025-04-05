@@ -7,3 +7,4 @@ python-dotenv
 langchain-google-genai
 gunicorn 
 langchain_community
+faiss-cpu
